@@ -3,7 +3,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build && php artisan key:generate && php artisan view:clear && php artisan config:clear && php artisan route:clear"
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.10",
