@@ -35,7 +35,7 @@
                     Services
                 </div>
 
-                <a href="/" class="btn btn-secondary text-cbrown font-bold uppercase">
+                <a href="/user" class="btn btn-secondary text-cbrown font-bold uppercase">
                     Sign in
                 </a>
             </div>
