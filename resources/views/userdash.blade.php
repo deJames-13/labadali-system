@@ -21,8 +21,7 @@
 
                     {{-- Logo --}}
                     <div class="logo flex space-x-2 items-center lg:hidden">
-                        <img class="w-20 inline-block" src="{{ asset('img/logo-icon-transparent.png') }}"
-                            alt="">
+                        <img class="w-20 inline-block" src="img/logo-icon-transparent.png" alt="">
                         <span class="text-4xl uppercase text-secondary font-BobbyJones">labadali</span>
                     </div>
 
@@ -38,7 +37,7 @@
                         <div class="text-cbrown font-medium flex space-x-3 items-center">
                             <span>Hi, <span class="text-cpink font-bold">Rizza!</span></span>
                             <div class="aspect-square border border-secondary rounded-full">
-                                <img class="w-12 " src="{{ asset('img/rizza-icon.png') }}" alt="rizza">
+                                <img class="w-12 " src="img/rizza-icon.png" alt="rizza">
                             </div>
                         </div>
                     </div>
@@ -210,7 +209,7 @@
                 {{-- Logo --}}
                 <div
                     class="logo pb-3 flex space-x-2 items-center mb-10 border-b-2 border-cbrown opacity-0 lg:opacity-100">
-                    <img class="w-16 inline-block" src="{{ asset('img/logo-icon-transparent.png') }}" alt="">
+                    <img class="w-16 inline-block" src="img/logo-icon-transparent.png" alt="">
                     <span class="text-4xl uppercase text-primary font-BobbyJones">labadali</span>
                 </div>
 
