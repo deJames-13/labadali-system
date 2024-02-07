@@ -12,3 +12,7 @@ Route::get('/signin', function () {
 Route::get('/user', function () {
     return view('userdash');
 });
+
+Route::get('/order', function () {
+    return view('order');
+});
