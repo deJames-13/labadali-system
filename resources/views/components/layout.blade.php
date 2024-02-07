@@ -12,7 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>{{ $title }}</title>
-    @vite('resources/css/app.css')
+    @vite('/resources/css/app.css')
 </head>
 
 <body class="antialiased">
@@ -30,7 +30,7 @@
 
 
 
-    @vite('resources/css/app.js')
+    @vite('/resources/css/app.js')
 </body>
 
 </html>
