@@ -30,7 +30,6 @@
 
 
 
-    @vite('resources/css/app.js')
     @vite('resources/js/app.js')
 </body>
 
