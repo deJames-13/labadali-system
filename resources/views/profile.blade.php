@@ -1,4 +1,4 @@
-<x-drawer>
+<x-drawer :page="'profile'">
 
 
     {{-- Main Section --}}

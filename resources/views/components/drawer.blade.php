@@ -1,3 +1,4 @@
+@props(['page' => ''])
 {{-- Drawer --}}
 <x-layout :title="'Labadali'" :noHeader="true">
     <div class="drawer lg:drawer-open">
@@ -19,12 +20,13 @@
                     {{-- Nav --}}
                     <div class="nav flex space-x-6 items-center max-h-24 ">
 
-                        <div class="text-cbrown font-medium flex space-x-3 items-center">
+                        <div class="btn btn-ghost text-cbrown font-medium flex space-x-3 items-center">
                             <span>Hi, <span class="text-cpink font-bold">Rizza!</span></span>
-                            <div class="aspect-square border border-secondary rounded-full">
-                                <img class="w-12 " src="img/rizza-icon.png" alt="rizza">
+                            <div class="border border-secondary rounded-full">
+                                <img class="w-10" src="img/rizza-icon.png" alt="rizza">
                             </div>
                         </div>
+
                         <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">
                             <i class="fa-solid fa-bars"></i>
                             Menu
@@ -39,7 +41,7 @@
 
         </div>
 
-        <x-sidebar />
+        <x-sidebar :page="$page" />
 
     </div>
 </x-layout>

@@ -1,8 +1,5 @@
-@props(['active' => false])
-@php
-    $activeBtn = $active ? 'text-primary text-xl font-bold hover:text-cbrown' : 'text-cbrown font-medium hover:font-bold hover:scale-105 transform transition-all';
-    $btnClass = 'w-full btn btn-ghost flex justify-start items-center' . $activeBtn;
-@endphp
+@props(['page' => ''])
+
 
 {{-- Drawer Side Bar --}}
 <div class="drawer-side">
@@ -20,39 +17,39 @@
 
 
                 {{-- Side Bar Button --}}
-                <button onclick="window.location.href='/order'" class="{{ $btnClass }} ">
+                <x-side-button :link="'order'" :active="$page == 'order'">
                     <i class="fas fa-box"></i>
                     Place Order
-                </button>
+                </x-side-button>
 
-                <button class="{{ $btnClass }}  ">
+                <x-side-button>
                     <i class="fa-solid fa-compass"></i>
                     Laundry Status
-                </button>
+                </x-side-button>
 
-                <button class="{{ $btnClass }} ">
+                <x-side-button>
                     <i class="fas fa-clock-rotate-left"></i>
                     View History
-                </button>
+                </x-side-button>
 
-                <button class="{{ $btnClass }}">
+                <x-side-button>
                     <i class="fas fa-message"></i>
                     Message
-                </button>
+                </x-side-button>
 
             </div>
 
             <div class="w-full flex flex-col space-y-3 items-center">
 
-                <button onclick="window.location.href='/user'" class="{{ $btnClass }} ">
+                <x-side-button :link="'profile'" :active="$page == 'profile'">
                     <i class="fas fa-user"></i>
                     My Profile
-                </button>
+                </x-side-button>
 
-                <button class="{{ $btnClass }} ">
+                <x-side-button>
                     <i class="fa fa-gear"></i>
                     Settings
-                </button>
+                </x-side-button>
 
                 <button onclick="window.location.href='/'"
                     class="w-full btn btn-secondary text-cbrown font-bold flex justify-start items-center">

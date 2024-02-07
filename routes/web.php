@@ -9,8 +9,11 @@ Route::get('/signin', function () {
     return view('signin');
 });
 
-Route::get('/user', function () {
-    return view('userdash');
+Route::get('/profile', function () {
+    return view('profile');
+});
+Route::get('/dash', function () {
+    return view('dash');
 });
 
 Route::get('/order', function () {

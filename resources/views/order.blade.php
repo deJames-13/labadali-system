@@ -1,4 +1,4 @@
-<x-drawer>
+<x-drawer :page="'order'">
 
     <div class="main-section w-full p-12 min-h-screen">
         <div class="w-full brder flex flex-col space-y-6 justify-center">
